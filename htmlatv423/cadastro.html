@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        .caixa{
+    
+    background-color: aliceblue;
+    border-radius: 5px;
+    max-height: 700px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.botao{  
+    text-align: center;     
+    margin-left: 150px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+h1, h2{
+    text-align: center;
+}
+.sublinhado{
+    text-decoration: underline;
+}
+    </style>
+
+</head>
+<body>
+    <h1 class="sublinhado">Linguagem Online</h1>
+    <h2>Faça seu cadastrado abaixo e começe a aprender</h2>
+    
+    <form onsubmit="alert('Dados salvos com sucesso!')" class="caixa">
+        Nome: <input type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+        Data de nascimento: <input type="date" name="nascimento" min="1920-01-01" max="2026-12-12" required><br><br>
+        E-mail: <input type="email" name="email" required multiple placeholder="email@email.com" ><br><br>
+        Senha: <input type="password" name="senha" placeholder="Digite sua senha" required><br><br>
+        Gênero: 
+            <select name="genero">
+                <option value="outro">Outro / Não informar</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                
+            </select>
+        <input type="text" name="genero" placeholder="Informe o seu gênero"><br><br>
+        Curso(selecione o curso de interesse): 
+                <select name="curso" id="curso">
+            <option value="sistemas">Inglês</option>
+            <option value="informatica">Espanhol</option>
+            <option value="redes">Francês</option>
+                </select><br><br>
+                
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+</body>
+</html> 

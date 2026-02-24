@@ -1,0 +1,173 @@
+body{
+    color: white;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.flag1{
+  background: repeating-linear-gradient(
+    to bottom,
+    #B22234 0%,
+    #B22234 7.69%,   /* Vermelho até ~7.7% */
+    #FFFFFF 7.69%,   /* Branco começa no mesmo ponto */
+    #FFFFFF 15.38%   /* Branco termina em ~15.4% */
+  ) !important;
+  
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body.flag2 {
+  background: repeating-linear-gradient(
+    to right, 
+    #006847 0% 33.33%,    /* Verde */
+    #FFFFFF 33.33% 66.66%, /* Branco */
+    #CE1126 66.66% 100%    /* Vermelho */
+  );
+ 
+}
+body.flag3 {
+margin: 0;
+  min-height: 100vh; 
+
+  /* 2. Aplica a bandeira (importante usar 'background' ou 'background-image') */
+  background: repeating-linear-gradient(
+    to right, 
+    #0055A4 0% 33.33%, 
+    #FFFFFF 33.33% 66.66%, 
+    #EF4135 66.66% 100%
+  ) no-repeat;
+  
+  /* 3. Evita que o fundo se repita se a página crescer */
+  background-attachment: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: black;
+    font: 30px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+nav button{
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+section{
+    background-color: rgba(240, 30, 30, 0.877);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+h2, h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article{
+    border: 1px solid;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+footer{
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid;
+    border-radius: 2px;
+}
+
+.carrossel img.ativa{
+    display: block;
+    
+}
+
+.carrossel{
+    width: 600px;
+    height: 300px;
+    margin: 30px auto 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.carrossel img{
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    display: none;
+    border: 2px solid rgb(0, 68, 255);
+}
+
+.Botoes{
+    text-align: center;
+}
+
+.Botoes button{
+    padding: 12px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(40, 123, 248);
+    color: white;
+    font-size: 16px;
+    max-width: 150px;
+
+}
+
+.tabela{
+    width: 80%;
+    margin-left: 90px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    
+}
+
+.tabela th,
+.tabela td{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.frase{
+    font-size: 26px;
+    font-family: Arial, sans-serif; 
+}
+
+

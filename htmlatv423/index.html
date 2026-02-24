@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Linguagem Online </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flag1">
+    <header> <h1> Linguagem Online </h1>
+            <nav>
+        <a href="#principal" class="Botoes"><button> Cursos disponíveis</button></a>
+        <a href="#conteudo" class="Botoes"><button>  Catálogo de cursos</button></a>
+        <a href="cadastro.html" class="Botoes"><button> Faça seu cadastro</button></a>
+    </nav>
+    <p class="frase"> Curso de Inglês, Espanhol e Francês para todas as gerações. > Potencialize seu aprendizado com o auxílio de IA e vá do básico ao avançado com muito mais velocidade e eficiência. O futuro do seu bilinguismo começa aqui.</p>
+    </header>
+    
+
+    <section id="principal">
+        <h2> Cursos disponíveis</h2>
+        <h3>Clique para acessar</h3>
+        <div class="carrossel">
+          <a href="#compra">  <img src="foto1.webp" class="ativa"></a>
+          <a href="#compra">  <img src="foto2.webp" ></a>           
+          <a href="#compra">  <img src="foto3.webp" ></a>
+            
+        </div>
+
+        <div class="Botoes">
+            <button onclick="anterior()">Anterior</button>
+            <button onclick="proximo()">Próximio</button>
+        </div>
+
+    </section>
+
+    <section id="conteudo">
+
+ <article>
+         <h2 class="sublinhado"> Catálogo </h2>
+     <table class="tabela">
+        <thead>
+            <tr>
+                <th>Idioma</th>
+                <th>Duração</th>
+                <th>Preço</th>
+            </tr>        
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Inglês</td>
+                <td>100h</td>
+                <td>1.000,00 reais</td>
+            </tr>
+            <tr>
+                <td>Espanhol</td>
+                <td>80h</td>
+                <td>800,00 reais</td>
+            </tr>
+            <tr>
+                <td>Francês</td>
+                <td>80h</td>
+                <td>800,00 reais</td>
+            </tr>
+
+        </tbody>  
+     </table>
+</article>
+</section>
+
+<section id="compra">
+    <div class="Botoes">
+        <button onclick="alert('direcionando ao seu email o codigo de barras para prosseguir com o curso de inglês. APROVEITE!!')"> Selecionar   INGLÊS </button> <br>
+        <button onclick="alert('direcionando ao seu email o codigo de barras para prosseguir com o curso de espanhol. APROVEITE!!')"> Selecionar ESPANHOL </button> <br>
+        <button onclick="alert('direcionando ao seu email o codigo de barras para prosseguir com o curso de francês. APROVEITE!!')"> Selecionar  FRANCÊS </button>
+    </div>
+
+
+</section>
+    <footer>
+        <p>LinguagemOnline™ <br> @LinguagemOnline <br> <a href="https:\\youtube.com">YouTube</a> <br> <a href="https:\\instagram.com">Instagram</a> </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
