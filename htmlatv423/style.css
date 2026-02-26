@@ -169,5 +169,36 @@ footer{
     font-size: 26px;
     font-family: Arial, sans-serif; 
 }
+@media (max-width: 600px) {
+    header {
+        font-size: 20px;  
+        padding: 15px;
+    }
+
+    .frase {
+        font-size: 18px;  
+    }
+
+    .Botoes button {
+        width: 100%;      
+        max-width: none;
+    }
+/* Ajuste para uso no celular  */
+@media (max-width: 600px) {
+    header {
+        font-size: 20px;  
+        padding: 15px;
+    }
+        .frase {
+        font-size: 18px;  
+    }
+    .Botoes button {
+        width: 100%;      
+        max-width: none;
+    }
+    body.flag2, body.flag3 {
+        background-attachment: scroll; /* Melhor performance em alguns celulares */
+    }
+}
 
 
